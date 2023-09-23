@@ -1,0 +1,84 @@
+/* Home.css */
+body{
+    background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(94,77,205,1) 50%, rgba(69,211,252,1) 100%);
+  }
+.product-card {
+    background-color: darkcyan;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-card img {
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .product-card .card-body {
+    text-align: center;
+  }
+  
+  .product-card .shopnow-btn {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+  }
+  
+  .product-card .shopnow-btn:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  .shopnow-btn {
+    padding: 0.5em 1.5em; /* Adjust the padding to make the button smaller */
+  background: none;
+  border: 2px solid #fff;
+  font-size: 14px; /* Decrease the font size */
+  color: #131313;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s;
+  border-radius: 8px; /* Decrease the border-radius to make the corners less round */
+  background-color: #ecd448;
+  font-weight: bolder;
+  box-shadow: 0 2px 0 2px #000;
+   }
+   
+   .shopnow-btn:before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 120%;
+    background-color: #5e4dcd;
+    top: 50%;
+    transform: skewX(30deg) translate(-150%, -50%);
+    transition: all 0.5s;
+   }
+   
+   .shopnow-btn:hover {
+    background-color: #4cc9f0;
+    color: #fff;
+    box-shadow: 0 2px 0 2px #0d3b66;
+   }
+   
+   .shopnow-btn:hover::before {
+    transform: skewX(30deg) translate(150%, -50%);
+    transition-delay: 0.1s;
+   }
+   
+   .shopnow-btn:active {
+    transform: scale(0.9);
+   }
+  /* Add more custom styles as needed */
+  
